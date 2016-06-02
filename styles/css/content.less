@@ -1,0 +1,217 @@
+// Анимированные иконки родительский блок
+.accidents {
+	background: darken(@colorBlue, 10%);
+	font-size: 0;
+	padding: 85px 225px;
+	h1, p {
+		color: @colorWhite;
+	}
+	h1 {
+		margin: 25px auto 15px;
+	}
+}
+// Фон иконок
+.accidents .icon {
+	height: 100px;
+	width: 100px;
+}
+// Иконки
+.rocket .icon {
+	background: darken(@colorBlue, 25%) url(imgs/stars.png) center 5px no-repeat;
+	overflow: hidden;
+	&:before {
+		background-image: url(imgs/rocket.png);
+		height: 73px;
+		right: 85px;
+		top: 85px;
+		width: 72px;
+		z-index: 2;
+	}
+	&:after {
+		background-image: url(imgs/spurt.png);
+		height: 35px;
+		left: 12px;
+		opacity: 0;
+		top: 54px;
+		width: 35px;
+	}
+}
+.flask .icon {
+	background: darken(@colorBlue, 25%) url(imgs/flask.png) center 20px no-repeat;
+	&:before {
+		background-image: url(imgs/bulb-inside.png);
+		height: 12px;
+		left: 35px;
+		top: 65px;
+		width: 29px;
+	}
+	&:after {
+		background-image: url(imgs/bulbs.png);
+		height: 33px;
+		left: 38px;
+		top: -13px;
+		width: 26px;
+	}
+}
+.finger .icon {
+	background: darken(@colorBlue, 25%);
+	overflow: hidden;
+	&:before {
+		background-image: url(imgs/finger.png);
+		height: 71px;
+		left: -15px;
+		top: -20px;
+		width: 82px;
+	}
+	&:after {
+		background-image: url(imgs/button.png);
+		height: 33px;
+		left: 0;
+		top: 68px;
+		width: 101px;
+	}
+}
+
+// Истории
+.box {
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+}
+.description {
+	color: @colorBlack;
+	position: absolute;
+	width: 415px;
+	h1 {
+		margin-bottom: 25px;
+	}
+	p {
+		margin: 25px 0;
+	}
+}
+.ginger {
+	background: @colorWhite url(imgs/ginger.png) no-repeat;
+	background-position: -225px center;
+	.description {
+		right: 185px;
+		top: -280px;
+	}
+	.testimonial {
+		background: lighten(@colorBlack, 90%);
+		border-radius: 5px;
+		color: lighten(@colorBlack, 50%);
+		padding: 25px 20px;
+		position: relative;
+		width: 345px;
+		&:after {
+			background: @colorBeige url(imgs/mandarck-lil.png);
+			border-radius: 50%;
+			border: 5px solid @colorWhite;
+			bottom: -30px;
+			content: '';
+			display: block;
+			height: 50px;
+			position: absolute;
+			right: -30px;
+			width: 50px;
+		}
+	}
+	.author {
+		color: @colorLightBlue;
+		margin-bottom: 0;
+		margin-left: 20px;
+	}
+}
+.fighting {
+	background: @colorWhite url(imgs/girl.png) no-repeat;
+	background-position: 1200px center;
+	.description {
+		left: 185px;
+		top: 400px;
+	}
+}
+
+// Команда мечты
+.characters {
+	background: lighten(@colorBlack, 90%);
+	font-size: 0;
+	padding: 85px 225px;
+	h2 {
+		color: @colorBlack;
+		margin: 30px 0 10px;
+	}
+	h3 {
+		margin-bottom: 35px;
+	}
+	h3, p {
+		color: lighten(@colorBlack, 50%);
+	}
+	a {
+		color: @colorLightBlue;
+		margin-top: 20px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+// Фон иконок
+.characters .icon {
+	height: 160px;
+	width: 160px;
+}
+// Иконки
+.dexter .icon {
+	background: @colorLightBlue;
+	transform: scale(0);
+	&:before {
+		background: url(imgs/dexter.png);
+		height: 149px;
+		left: -15px;
+		top: 25px;
+		width: 154px;
+	}
+}
+.dee-dee .icon {
+	background: @colorYellow;
+	transform: scale(0);
+	&:before {
+		background: url(imgs/dee-dee.png);
+		height: 145px;
+		left: -55px;
+		top: 20px;
+		width: 222px;
+	}
+}
+.mandarck .icon {
+	background: @colorBeige;
+	transform: scale(0);
+	&:before {
+		background: url(imgs/mandarck.png);
+		height: 164px;
+		left: 16px;
+		top: 5px;
+		width: 128px;
+	}
+}
+
+// Блок с сообщением
+.message {
+	background: @colorYellow;
+	font-size: 0;
+	height: 120px;
+	line-height: 120px;
+	text-align: center;
+	width: 1200px;
+	span {
+		color: @colorWhite;
+		font-size: 20px;
+		font-weight: bold;
+		margin-right: 30px;
+	}
+	a {
+		background: url(imgs/dribbble.png);
+		height: 26px;
+		margin-top: -2px;
+		width: 26px;
+	}
+}

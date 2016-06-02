@@ -1,0 +1,18 @@
+{
+  "name": "DexsLaboratory",
+  "version": "1.0.0",
+  "description": "One page template with animation",
+  "scripts": {
+    "build": "node ./node_modules/less/bin/lessc ./styles/css/main.less ./styles/css/main.css",
+    "start": "npm run build && node ./node_modules/opener/opener.js http://127.0.0.1:8080 && node ./node_modules/node-static/bin/cli.js"
+  },
+  "author": "Sergey Koternyak <sergeykoternyak@gmail.com>",
+  "dependencies": {
+    "node-static": "^0.7.7",
+    "jquery": "^2.2.4",
+    "opener": "^1.4.1"
+  },
+  "devDependencies": {
+    "less": "^2.7.1"
+  }
+}

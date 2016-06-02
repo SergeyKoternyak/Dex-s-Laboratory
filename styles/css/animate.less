@@ -1,0 +1,256 @@
+// Анимация в шапке
+.likes-block-animate {
+	@keyframes drop {
+		0% {
+			top: -150px;
+		}
+		50% {
+			top: 590px;
+		}
+		75% {
+			top: 500px;
+		}
+		100% {
+			top: 590px;
+		}
+	}
+	animation: drop .8s ease-in-out;
+	animation-fill-mode: forwards;
+}
+.dexter-animate {
+	@keyframes dex {
+		0% {
+			background-position: center 410px;
+		}
+		10% {
+			background-position: center 350px;
+		}
+		50% {
+			background-position: center 350px;
+		}
+		60% {
+			background-position: center 204px;
+		}
+		80% {
+			background-position: center 204px;
+		}
+		90% {
+			background-position: center 225px;
+		}
+		100% {
+			background-position: center 204px;
+		}
+	}
+	animation: dex 2s ease-in-out;
+	animation-fill-mode: forwards;
+}
+.dexter-idea-animate {
+	@keyframes idea {
+		0% {
+			margin-top: -112px;
+		}
+		50% {
+			margin-top: 100px;
+		}
+		100% {
+			margin-top: 65px;
+		}
+	}
+	animation: idea .4s ease-in-out;
+	animation-fill-mode: forwards;
+}
+// Анимация событий
+.accidents-animate {
+	.flask .icon {
+		&:before {
+			@keyframes bulbs-inside {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			animation: bulbs-inside 1s ease-in infinite alternate;
+		}
+		&:after {
+			@keyframes bulbs {
+				from {
+					top: -13px;
+					opacity: 1;
+				}
+				to {
+					top: -33px;
+					opacity: 0;
+				}
+			}
+			animation: bulbs 2s linear infinite;
+		}
+	}
+	.finger .icon {
+		&:before {
+			@keyframes finger {
+				0% {
+					top: -20px;
+				}
+				25% {
+					top: -2px;
+				}
+				50% {
+					top: 5px;
+				}
+				100% {
+					top: -20px;
+				}
+			}
+			animation: finger 2s linear infinite;
+		}
+		&:after {
+			@keyframes button {
+				25% {
+					top: 68px;
+				}
+				50% {
+					top: 75px;
+				}
+				100% {
+					top: 68px;
+				}
+			}
+			animation: button 2s linear infinite;
+		}
+	}
+}
+// Анимация ракеты
+.rocket .icon.visible-rocket {
+	overflow: visible;
+}
+.rocket-animate {
+	&:before {
+		@keyframes rocket {
+			from {
+				top: 85px;
+				right: 85px;
+			}
+			to {
+				top: 0;
+				right: 0;
+			}
+		}
+		animation: rocket 2s linear;
+		animation-fill-mode: forwards;
+	}
+}
+.spurt-animate {
+	&:after {
+		@keyframes spurt {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+		animation: spurt 1s linear infinite alternate;
+	}
+}
+// Анимация историй
+.ginger-animate {
+	@keyframes boy-shift {
+		50% {
+			background-position: -225px center;
+		}
+		100% {
+			background-position: 207px center;
+		}
+	}
+	animation: boy-shift 2s cubic-bezier(.5, 1.5, .9, -.5);
+	animation-fill-mode: forwards;
+	.description {
+		@keyframes desc-drop {
+			0% {
+				top: -280px;
+			}
+			100% {
+				top: 61px;
+			}
+		}
+		animation: desc-drop 1s cubic-bezier(1, 0, .8, 1.6);
+		animation-fill-mode: forwards;
+	}
+}
+.fighting-animate {
+	@keyframes girl-shift {
+		50% {
+			background-position: 1200px center;
+		}
+		100% {
+			background-position: 649px center;
+		}
+	}
+	animation: girl-shift 2s cubic-bezier(.5, 1.5, .9, -.5);
+	animation-fill-mode: forwards;
+	.description {
+		@keyframes desc-up {
+			0% {
+				top: 400px;
+			}
+			100% {
+				top: 112px;
+			}
+		}
+		animation: desc-up 1s cubic-bezier(1, 0, .8, 1.6);
+		animation-fill-mode: forwards;
+	}
+}
+// Анимация героев
+.characters-animate {
+	.dexter .icon {
+		@keyframes dexter-scale {
+			0% {
+				transform: scale(0);
+			}
+			100% {
+				transform: scale(1);
+			}
+		}
+		animation: dexter-scale 1s cubic-bezier(1, 0, .7, .25);
+		animation-fill-mode: forwards;
+	}
+	.dee-dee .icon {
+		@keyframes dee-scale {
+			50% {
+				transform: scale(0);
+			}
+			60% {
+				transform: scale(.5);
+			}
+			70% {
+				transform: scale(0);
+			}
+			80% {
+				transform: scale(.75);
+			}
+			90% {
+				transform: scale(0);
+			}
+			100% {
+				transform: scale(1);
+			}
+		}
+		animation: dee-scale 4s cubic-bezier(1, 0, .7, .25);
+		animation-fill-mode: forwards;
+	}
+	.mandarck .icon {
+		@keyframes mandarck-scale {
+			50% {
+				transform: scale(0);
+			}
+			100% {
+				transform: scale(1);
+			}
+		}
+		animation: mandarck-scale 2s cubic-bezier(1, 0, .7, .25);
+		animation-fill-mode: forwards;
+	}
+}

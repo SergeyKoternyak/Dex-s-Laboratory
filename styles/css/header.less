@@ -1,0 +1,138 @@
+// Шапка страницы
+.page-header {
+	background: @colorBlue url(imgs/header-background.png);
+	height: 740px;
+	overflow: hidden;
+	padding: 0 185px;
+	position: relative;
+	h1, p {
+		color: @colorWhite;
+	}
+}
+// Логотип
+.page-logo {
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+	padding: 30px 0 0 23px;
+	position: relative;
+	&:before {
+		background: url(imgs/logo.png) center no-repeat;
+		bottom: 0;
+		content: '';
+		display: block;
+		height: 23px;
+		left: 0;
+		position: absolute;
+		width: 23px;
+	}
+}
+// Текст-заголовок
+.dex-lab-text {
+	margin: 200px 0 25px;
+}
+// Текст
+.balkan-brothers-text {
+	margin-bottom: 25px;
+}
+// Блок с лайками
+.likes-block {
+	background: fadeout(darken(@colorBlue, 10%), 50%);
+	box-sizing: border-box;
+	font-size: 0;
+	height: 150px;
+	left: 0;
+	line-height: 150px;
+	padding: 0 185px;
+	position: absolute;
+	top: -150px;
+	width: 1200px;
+	p {
+		display: inline-block;
+		font-size: 12px;
+	}
+}
+.facebook-wrap,
+.twitter-wrap {
+	display: inline-block;
+	margin-left: 15px;
+}
+.likes-button,
+.likes-count {
+	background: @colorWhite;
+	border-radius: 3px;
+	display: inline;
+	font-size: 12px;
+	padding: 0 3px;
+}
+.likes-button {
+	cursor: pointer;
+}
+.likes-count {
+	margin-left: 6px;
+	position: relative;
+	z-index: 1;
+	&:before {
+		background: @colorWhite;
+		content: '';
+		display: block;
+		height: 4px;
+		left: -2px;
+		position: absolute;
+		top: 5px;
+		transform: rotate(45deg);
+		width: 4px;
+		z-index: -1;
+	}
+}
+.facebook-wrap .likes-button {
+	color: #3b5998;
+}
+.twitter-wrap i {
+	color: #55acee;
+}
+// Блок с телефоном
+.iphone-form {
+	background: url(imgs/phone.png) center no-repeat;
+	bottom: 50px;
+	height: 584px;
+	position: absolute;
+	right: 185px;
+	width: 276px;
+}
+.iphone-display {
+	background: @colorBlue url(imgs/dexter.png) no-repeat;
+	background-position: center 410px;
+	height: 410px;
+	left: 22px;
+	overflow: hidden;
+	position: absolute;
+	top: 85px;
+	width: 232px;
+}
+.iphone-status-bar {
+	background: url(imgs/status-bar.png) center no-repeat;
+	height: 8px;
+	padding-top: 5px;
+}
+.dexter-idea {
+	background: @colorLightBlue;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 25px;
+	margin: -112px auto 0;
+	padding: 20px 30px;
+	position: relative;
+	width: 120px;
+	&:after {
+		background: @colorLightBlue;
+		bottom: -7px;
+		content: '';
+		height: 14px;
+		position: absolute;
+		right: 20px;
+		transform: rotate(45deg);
+		width: 14px;
+	}
+}

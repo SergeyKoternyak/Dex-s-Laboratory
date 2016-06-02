@@ -1,0 +1,91 @@
+@font-face {
+	font-family: 'Asap';
+	font-style: normal;
+	font-weight: normal;
+	src: url(fonts/Asap-Regular-webfont.woff);
+}
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+}
+h2 {
+	font-size: 25px;
+	font-weight: bold;
+}
+h3 {
+	font-size: 20px;
+}
+h4 {
+	font-size: 15px;
+	font-weight: bold;
+}
+p {
+	font-size: 14px;
+}
+a {
+	font-size: 14px;
+	text-decoration: none;
+	display: inline-block;
+}
+// Стиль кнопки
+.download-button {
+	background: @colorLightBlue;
+	border-radius: 5px;
+	color: @colorWhite;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	width: 150px;
+	box-sizing: border-box;
+	&:hover {
+		animation: heartbeat 1s linear infinite;
+		@keyframes heartbeat {
+			0% {
+				transform: scale(1);
+			}
+			15% {
+				transform: scale(1.1);
+			}
+			30% {
+				transform: scale(1);
+			}
+			45% {
+				transform: scale(1.1);
+			}
+			60% {
+				transform: scale(1);
+			}
+		}
+	}
+}
+// Стиль колонок
+.column {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	padding: 0 25px;
+	width: 200px;
+}
+// Стиль иконок
+.icon {
+	position: relative;
+	border-radius: 50%;
+	display: inline-block;
+	z-index: 2;
+	&:before, &:after {
+		content: '';
+		display: block;
+		position: absolute;
+		background: center no-repeat;
+		z-index: 1;
+	}
+}
+// Контейнер
+.container {
+	font-family: 'Asap';
+	margin: auto;
+	width: 1200px;
+}

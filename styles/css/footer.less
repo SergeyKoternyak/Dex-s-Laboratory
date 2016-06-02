@@ -1,0 +1,43 @@
+// Подвал сайта
+.footer-page {
+	background: darken(@colorYellow, 5%);
+	color: @colorWhite;
+	font-size: 0;
+	padding: 50px 225px;
+	a {
+		color: @colorWhite;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.column {
+		text-align: left;
+	}
+	h4 {
+		margin-bottom: 20px;
+		position: relative;
+		&:before {
+			bottom: 0;
+			content: '';
+			display: block;
+			left: -30px;
+			position: absolute;
+		}
+	}
+}
+// Иконки заголовков
+.mail h4:before {
+	background: url(imgs/mail.png);
+	height: 20px;
+	width: 23px;
+}
+.location h4:before {
+	background: url(imgs/location.png);
+	height: 23px;
+	width: 20px;
+}
+.skype h4:before {
+	background: url(imgs/skype.png);
+	height: 25px;
+	width: 24px;
+}
